@@ -98,18 +98,18 @@ const UploadProduct = ({
        <div className='bg-white p-4 rounded w-full max-w-2xl h-full max-h-[80%] overflow-hidden'>
 
             <div className='flex justify-between items-center pb-3'>
-                <h2 className='font-bold text-lg'>Upload Product</h2>
+                <h2 className='font-bold text-lg'>Đăng Sản Phẩm</h2>
                 <div className='w-fit ml-auto text-2xl hover:text-red-600 cursor-pointer' onClick={onClose}>
                     <CgClose/>
                 </div>
             </div>
 
           <form className='grid p-4 gap-2 overflow-y-scroll h-full pb-5' onSubmit={handleSubmit}>
-            <label htmlFor='productName'>Product Name :</label>
+            <label htmlFor='productName'>Tên Sản Phẩm :</label>
             <input 
               type='text' 
               id='productName' 
-              placeholder='enter product name' 
+              placeholder='Nhập tên sản phẩm' 
               name='productName'
               value={data.productName} 
               onChange={handleOnChange}
@@ -118,11 +118,11 @@ const UploadProduct = ({
             />
 
 
-            <label htmlFor='brandName' className='mt-3'>Brand Name :</label>
+            <label htmlFor='brandName' className='mt-3'>Tên Thương Hiệu :</label>
             <input 
               type='text' 
               id='brandName' 
-              placeholder='enter brand name' 
+              placeholder='Nhập tên thương hiệu' 
               value={data.brandName} 
               name='brandName'
               onChange={handleOnChange}
@@ -130,9 +130,9 @@ const UploadProduct = ({
               required
             />
 
-              <label htmlFor='category' className='mt-3'>Category :</label>
+              <label htmlFor='category' className='mt-3'>Loại :</label>
               <select required value={data.category} name='category' onChange={handleOnChange} className='p-2 bg-slate-100 border rounded'>
-                  <option value={""}>Select Category</option>
+                  <option value={""}>Chọn Loại</option>
                   {
                     productCategory.map((el,index)=>{
                       return(
@@ -142,12 +142,12 @@ const UploadProduct = ({
                   }
               </select>
 
-              <label htmlFor='productImage' className='mt-3'>Product Image :</label>
+              <label htmlFor='productImage' className='mt-3'>Hình Sản Phẩm :</label>
               <label htmlFor='uploadImageInput'>
               <div className='p-2 bg-slate-100 border rounded h-32 w-full flex justify-center items-center cursor-pointer'>
                         <div className='text-slate-500 flex justify-center items-center flex-col gap-2'>
                           <span className='text-4xl'><FaCloudUploadAlt/></span>
-                          <p className='text-sm'>Upload Product Image</p>
+                          <p className='text-sm'>Đăng Hình Sản Phẩm</p>
                           <input type='file' id='uploadImageInput'  className='hidden' onChange={handleUploadProduct}/>
                         </div>
               </div>
@@ -181,17 +181,17 @@ const UploadProduct = ({
                             }
                         </div>
                     ) : (
-                      <p className='text-red-600 text-xs'>*Please upload product image</p>
+                      <p className='text-red-600 text-xs'>*Vui Lòng Chọn Hình Ảnh</p>
                     )
                   }
                   
               </div>
 
-              <label htmlFor='price' className='mt-3'>Price :</label>
+              <label htmlFor='price' className='mt-3'>Giá :</label>
               <input 
                 type='number' 
                 id='price' 
-                placeholder='enter price' 
+                placeholder='Nhập giá' 
                 value={data.price} 
                 name='price'
                 onChange={handleOnChange}
@@ -200,11 +200,11 @@ const UploadProduct = ({
               />
 
 
-              <label htmlFor='sellingPrice' className='mt-3'>Selling Price :</label>
+              <label htmlFor='sellingPrice' className='mt-3'>Giá Bán :</label>
               <input 
                 type='number' 
                 id='sellingPrice' 
-                placeholder='enter selling price' 
+                placeholder='Nhập giá bán' 
                 value={data.sellingPrice} 
                 name='sellingPrice'
                 onChange={handleOnChange}
@@ -212,10 +212,10 @@ const UploadProduct = ({
                 required
               />
 
-              <label htmlFor='description' className='mt-3'>Description :</label>
+              <label htmlFor='description' className='mt-3'>Phần Mô Tả :</label>
               <textarea 
                 className='h-28 bg-slate-100 border resize-none p-1' 
-                placeholder='enter product description' 
+                placeholder='Nhập mô tả' 
                 rows={3} 
                 onChange={handleOnChange} 
                 name='description'
@@ -227,7 +227,7 @@ const UploadProduct = ({
 
 
 
-              <button className='px-3 py-2 bg-red-600 text-white mb-10 hover:bg-red-700'>Upload Product</button>
+              <button className='px-3 py-2 bg-red-600 text-white mb-10 hover:bg-red-700'>Đăng Sản Phẩm</button>
           </form> 
 
 
