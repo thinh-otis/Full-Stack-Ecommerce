@@ -71,7 +71,7 @@ const VerticalCard = ({loading, data = []}) => {
   )
 }
 
-VerticalCart.propTypes = {
+VerticalCard.propTypes = {
     loading: PropTypes.bool.isRequired,
     data: PropTypes.array.isRequired, // Hoặc shape nếu bạn muốn xác định kiểu cho các phần tử trong mảng
 };
