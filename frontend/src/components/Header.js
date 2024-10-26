@@ -119,10 +119,10 @@ function Header() {
           <div translate="no">
             {
               user?._id ? (
-                <button onClick={handleLogout} className="px-3 py-1 rounded-full text-white bg-red-600 hover:bg-red-700 hover:scale-110 transition-all">Đăng xuát</button>
+                <button onClick={handleLogout} className="px-3 py-1 rounded-full text-white bg-red-600 hover:bg-red-700 hover:scale-110 transition-all">Đăng Xuất</button>
               )
                 : (
-                  <Link to={"/login"} className="px-3 py-1 rounded-full text-white bg-red-600 hover:bg-red-700 hover:scale-110 transition-all"> Đăng nhập </Link>
+                  <Link to={"/login"} className="px-3 py-1 rounded-full text-white bg-red-600 hover:bg-red-700 hover:scale-110 transition-all"> Đăng Nhập </Link>
                 )
             }
 
