@@ -4,23 +4,23 @@ import BannerProduct from '../components/BannerProduct'
 import HorizontalCardProduct from '../components/HorizontalCardProduct'
 import VerticalCardProduct from '../components/VerticalCardProduct'
 
-const Home = () => {
+function Home() {
   return (
     <div>
-      <CategoryList/>
+      <CategoryList />
       <BannerProduct/>
+      
+      <HorizontalCardProduct category={"airpod"} heading={"Tai Nghe Bluetooth"}/>
+      <HorizontalCardProduct category={"watch"} heading={"Đồng hồ thông minh"}/>
 
-      <HorizontalCardProduct category={"airpodes"} heading={"Top's Airpodes"}/>
-      <HorizontalCardProduct category={"watches"} heading={"Popular's Watches"}/>
-
-      <VerticalCardProduct category={"mobiles"} heading={"Mobiles"}/>
-      <VerticalCardProduct category={"Mouse"} heading={"Mouse"}/>
-      <VerticalCardProduct category={"televisions"} heading={"Televisions"}/>
-      <VerticalCardProduct category={"camera"} heading={"Camera & Photography"}/>
-      <VerticalCardProduct category={"earphones"} heading={"Wired Earphones"}/>
-      <VerticalCardProduct category={"speakers"} heading={"Bluetooth Speakers"}/>
-      <VerticalCardProduct category={"refrigerator"} heading={"Refrigerator"}/>
-      <VerticalCardProduct category={"trimmers"} heading={"Trimmers"}/>
+      <VerticalCardProduct category={"mobile"} heading={"Điện Thoại"}/>
+      <VerticalCardProduct category={"mouse"} heading={"Chuột máy Tính"}/>
+      <VerticalCardProduct category={"television"} heading={"Smart Tivi"}/>
+      <VerticalCardProduct category={"camera"} heading={"Máy ảnh số"}/>
+      <VerticalCardProduct category={"earphone"} heading={"Tai nghe dây"}/>
+      <VerticalCardProduct category={"speaker"} heading={"Loa Bluetooth"}/>
+      <VerticalCardProduct category={"refrigerator"} heading={"Tủ lạnh"}/>
+      <VerticalCardProduct category={"trimmer"} heading={"Máy cắt tóc"}/>
     </div>
   )
 }
