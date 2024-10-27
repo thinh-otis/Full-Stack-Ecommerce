@@ -1,4 +1,4 @@
-const backendDomain = process.env.REACT_APP_BACKEND_URL || "https://backend-delta-blue.vercel.app"
+const backendDomain = process.env.REACT_APP_BACKEND_URL // "https://backend-delta-blue.vercel.app"
 
 const SummaryApi = {
     signUP : {
